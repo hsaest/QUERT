@@ -101,11 +101,13 @@ python run.py \
 If our paper or related resources prove valuable to your research, we kindly ask for citation. Please feel free to contact us with any inquiries.
 
 ```
-@article{xie2023quert,
-  title={QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search},
-  author={Jian Xie, Yidan Liang, Jingping Liu, Yanghua Xiao, Baohua Wu, Shenghua Ni},
-  journal={arXiv preprint arXiv:2306.06707},
-  year={2023}
+@misc{xie2023quert,
+      title={QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search}, 
+      author={Jian Xie and Yidan Liang and Jingping Liu and Yanghua Xiao and Baohua Wu and Shenghua Ni},
+      year={2023},
+      eprint={2306.06707},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
