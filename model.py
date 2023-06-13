@@ -293,6 +293,8 @@ class QueryBertForPreTraining(BertPreTrainedModel):
         geohash_loss = None
         triplet_loss = None
         nsp_loss = None
+        cl_logits = None
+        triplet_logits = None
 
         if mlm_labels is not None:
             masked_lm_loss = loss_fct(mlm_scores.view(-1, self.config.vocab_size), mlm_labels.view(-1))
@@ -313,7 +315,7 @@ class QueryBertForPreTraining(BertPreTrainedModel):
                                          geohash_labels[idx].view(-1))
             geohash_loss /= self.config.hash_bits
             total_loss += geohash_loss
-        cl_logits = None
+
 
         if nsp_labels is not None:
             nsp_scores = self.nsp_relationship(pooled_output[bsz * 3:])
@@ -325,7 +327,7 @@ class QueryBertForPreTraining(BertPreTrainedModel):
                                                  self.config.hard_negative)
             total_loss += cl_loss
 
-        triplet_logits = None
+
 
         if self.config.triplet_open:
             triplet_loss, triplet_logits = self.triplet_forward(sequence_output[bsz * 2:], attention_mask[bsz * 2:],
@@ -585,6 +587,8 @@ class QueryErnieForPreTraining(ErniePreTrainedModel):
         geohash_loss = None
         triplet_loss = None
         nsp_loss = None
+        cl_logits = None
+        triplet_logits = None
 
         if mlm_labels is not None:
             masked_lm_loss = loss_fct(mlm_scores.view(-1, self.config.vocab_size), mlm_labels.view(-1))
@@ -606,7 +610,6 @@ class QueryErnieForPreTraining(ErniePreTrainedModel):
             geohash_loss /= self.config.hash_bits
             total_loss += geohash_loss
 
-        cl_logits = None
 
         # if nsp_labels is not None:
         #     nsp_scores = self.nsp_relationship(pooled_output[bsz * 3:])
@@ -618,7 +621,7 @@ class QueryErnieForPreTraining(ErniePreTrainedModel):
                                                  self.config.hard_negative)
             total_loss += cl_loss
 
-        triplet_logits = None
+
 
         # if self.config.triplet_open:
         #     triplet_loss, triplet_logits = self.triplet_forward(sequence_output[bsz * 2:], attention_mask[bsz * 2:],

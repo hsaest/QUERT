@@ -310,7 +310,6 @@ class DataCollatorForGeoQueryModeling(DataCollatorMixin):
             phrases_order_label = torch.tensor(phrases_order_label)
             tokens_order_label = torch.tensor(tokens_order_label)
 
-            import random
             # if random.random() < self.pos_shuffle_probability:
             #    random.shuffle(order_ref[bsz_id])
             for sub_list in order_ref[bsz_id]:
