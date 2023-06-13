@@ -1,5 +1,9 @@
 Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search](https://arxiv.org/abs/2306.06707)".
 
+#### TODO
+
+- [ ] Release downstream tasks
+
 ## Dependencies
 
 - `pytorch==1.8.0`
@@ -91,7 +95,21 @@ python run.py \
     --per_device_eval_batch_size 32
 ```
 
-## TODO
+## Citation
 
-- [ ] Check code
-- [ ] Release downstream tasks
+If our paper or related resources prove valuable to your research, we kindly ask for citation. Please feel free to contact us with any inquiries.
+
+```
+@article{xie2023quert,
+  title={QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search},
+  author={Jian Xie, Yidan Liang, Jingping Liu, Yanghua Xiao, Baohua Wu, Shenghua Ni},
+  journal={arXiv preprint arXiv:2306.06707},
+  year={2023}
+}
+```
+
+## Question
+
+If you find any questions, please feel free to contact Jian Xie `jianx0321@gmail.com` .  
+
+You can also create new issue directly.
