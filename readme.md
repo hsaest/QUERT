@@ -3,6 +3,7 @@ Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Mo
 #### TODO
 
 - [ ] Release downstream tasks
+- [ ] Check the early version code
 
 ## Dependencies
 
@@ -113,3 +114,4 @@ If our paper or related resources prove valuable to your research, we kindly ask
 If you find any questions, please feel free to contact Jian Xie `jianx0321@gmail.com` .  
 
 You can also create new issue directly.
+
