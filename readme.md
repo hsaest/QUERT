@@ -1,4 +1,4 @@
-Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search](https://dl.acm.org/doi/pdf/10.1145/3580305.3599891".
+Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search](https://dl.acm.org/doi/pdf/10.1145/3580305.3599891)".
 
 #### TODO
 
