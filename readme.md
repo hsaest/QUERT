@@ -1,8 +1,8 @@
-Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search](https://arxiv.org/abs/2306.06707)".
+Resources for our KDD 2023 paper: "[QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search](https://dl.acm.org/doi/pdf/10.1145/3580305.3599891".
 
 #### TODO
 
-- [ ] Release downstream tasks
+- [x] Release downstream tasks
 - [ ] Check the early version code
 
 ## Dependencies
@@ -101,11 +101,21 @@ python run.py \
 If our paper or related resources prove valuable to your research, we kindly ask for citation. Please feel free to contact us with any inquiries.
 
 ```bib
-@article{xie2023quert,
-  title={QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search},
-  author={Xie, Jian and Liang, Yidan and Liu, Jingping and Xiao, Yanghua and Wu, Baohua and Ni, Shenghua},
-  journal={arXiv preprint arXiv:2306.06707},
-  year={2023}
+@inproceedings{10.1145/3580305.3599891,
+author = {Xie, Jian and Liang, Yidan and Liu, Jingping and Xiao, Yanghua and Wu, Baohua and Ni, Shenghua},
+title = {QUERT: Continual Pre-Training of Language Model for Query Understanding in Travel Domain Search},
+year = {2023},
+isbn = {9798400701030},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3580305.3599891},
+doi = {10.1145/3580305.3599891},
+booktitle = {Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+pages = {5282–5291},
+numpages = {10},
+keywords = {query understanding, continual pre-training, travel domain search},
+location = {Long Beach, CA, USA},
+series = {KDD '23}
 }
 ```
 
